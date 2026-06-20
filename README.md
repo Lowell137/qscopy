@@ -1,4 +1,4 @@
-# QScopy — Material You Clipboard Manager
+# QScopy — Clipboard Manager for Hyprland
 
 A modern, keyboard-driven clipboard manager for **Hyprland** built with [Quickshell](https://github.com/Quickshell/Quickshell). Features a Material You inspired design with true-black backgrounds, smooth animations, and deep Hyprland integration.
 
