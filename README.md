@@ -19,7 +19,8 @@ A modern, keyboard-driven clipboard manager for **Hyprland** built with [Quicksh
 
 ## Screenshots
 
-*Coming soon*
+<img width="920" height="681" alt="image" src="https://github.com/user-attachments/assets/23dcc91c-f028-4c5a-a128-ecee9bd72652" />
+
 
 ## Dependencies
 
