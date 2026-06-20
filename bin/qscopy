@@ -1,0 +1,19 @@
+#!/bin/bash
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+QML_PATH="$(dirname "$SCRIPT_DIR")/qml/shell.qml"
+
+if [ ! -f "$QML_PATH" ]; then
+    echo "Error: shell.qml not found at $QML_PATH"
+    exit 1
+fi
+
+# Toggle quickshell GUI
+PID=$(pgrep -f "quickshell -p $QML_PATH")
+if [ -n "$PID" ]; then
+    kill $PID 2>/dev/null
+    sleep 0.1
+    kill -9 $PID 2>/dev/null
+else
+    quickshell -p "$QML_PATH" > /dev/null 2>&1 &
+fi
